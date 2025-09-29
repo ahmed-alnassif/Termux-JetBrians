@@ -1,84 +1,72 @@
-# Termux/ZeroTermux
-## 安装图形化界面
-利用官方提供的图形显示软件Termux-x11，并安装xfce4图形化桌面显示。
-注意要先下载 [Termux](https://github.com/termux/termux-app/releases)/[ZeroTermux](https://od.ixcmstudio.cn/repository/main/ZeroTermux/)和[Termux-x11](https://github.com/termux/termux-x11/releases)应用
+# Termux / ZeroTermux  
 
-1. 打开Termux/ZeroTermux，更新源：
+## Install Graphical Interface  
 
-   ```
+Use the official graphical display software **Termux-x11** and install the **Xfce4** desktop environment.  
+
+⚠️ Before starting, download the following apps:  
+- [Termux](https://github.com/termux/termux-app/releases) / [ZeroTermux](https://od.ixcmstudio.cn/repository/main/ZeroTermux/)  
+- [Termux-x11](https://github.com/termux/termux-x11/releases)  
+
+1. Open **Termux/ZeroTermux** and update the package sources:  
+```bash
    pkg update && pkg upgrade
-   ```
-   
-2. 安装必要的软件包：
+```
 
-   ```
-   pkg install x11-repo xfce4 termux-x11-nightly -y   
-   ```
+2. Install the required packages:
 
-3. 运行 termux-x11：
-
+   ```bash
+   pkg install x11-repo xfce4 termux-x11-nightly -y
    ```
+3. Run **termux-x11**:
+
+   ```bash
    termux-x11 &
    ```
+4. In a new Termux session, set the **DISPLAY** variable and start Xfce:
 
-4. 在新的 Termux 会话中设置 DISPLAY 变量并启动 Xfce：
-
-   ```
+   ```bash
    export DISPLAY=:0
    startxfce4 &
    ```
-   
-5. 打开termux-x11应用，显示桌面
+5. Open the **termux-x11** app, and the desktop will be displayed.
 
-## 安装 Firefox 火狐浏览器
+---
 
-   ```
-   pkg install firefox
-   ```
+## Install Firefox Browser
 
-打开Xfce4桌面GUI环境，点击桌面下方的浏览器图标，就可以使用firefox
+```bash
+pkg install firefox
+```
 
-## 安装 Java 集成开发环境IDEA
+Open the Xfce4 desktop GUI environment, click the browser icon at the bottom of the desktop, and you can use Firefox.
 
-   ```
-   wget https://raw.githubusercontent.com/zryyoung/Termux/main/install_idea.sh && bash install_idea.sh
-   ```
+---
+
+## Install Java IDE (IntelliJ IDEA)
+
+```bash
+wget https://raw.githubusercontent.com/zryyoung/Termux/main/install_idea.sh && bash install_idea.sh
+```
 
 ![Termux xfce4 IDEA](img/Image_1749313966385.jpg)
+![IDEA Launch](img/Image_1749313963609.jpg)
+![IDEA Landscape Mode](img/Image_1749313961608.jpg)
+![IDEA Portrait Mode](img/Image_1749313959470.jpg)
+![IDEA Showing Spring Boot Project](img/Image_1749313933154.jpg)
+![IDEA Running Spring Boot Project](img/Image_1749313957258.jpg)
 
+---
 
-![IDEA启动](img/Image_1749313963609.jpg)
+## Install Python IDE (PyCharm)
 
-
-![IDEA运行横屏](img/Image_1749313961608.jpg)
-
-![IDEA运行竖屏](img/Image_1749313959470.jpg)
-
-![IDEA显示springboot项目](img/Image_1749313933154.jpg)
-
-![IDEA启动springboot项目](img/Image_1749313957258.jpg)
-
-## 安装 Python 集成开发环境 PyCharm
-
-   ```
-   wget https://raw.githubusercontent.com/zryyoung/Termux/main/install_idea.sh && bash install_pycharm.sh
-   ```
+```bash
+wget https://raw.githubusercontent.com/zryyoung/Termux/main/install_idea.sh && bash install_pycharm.sh
+```
 
 ![Termux xfce4 PyCharm](img/Image_1749315597915.jpg)
-
-
-![PyCharm启动](img/Image_1749315601328.jpg)
-
-
-![PyCharm运行横屏](img/Image_1749315603449.jpg)
-
-![PyCharm运行竖屏](img/Image_1749315605261.jpg)
-
-![PyCharm显示python项目](img/Image_1749315607055.jpg)
-
-![PyCharm启动python项目](img/Image_1749315608815.jpg)
-
-
-
-
-
+![PyCharm Launch](img/Image_1749315601328.jpg)
+![PyCharm Landscape Mode](img/Image_1749315603449.jpg)
+![PyCharm Portrait Mode](img/Image_1749315605261.jpg)
+![PyCharm Showing Python Project](img/Image_1749315607055.jpg)
+![PyCharm Running Python Project](img/Image_1749315608815.jpg)
